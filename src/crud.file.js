@@ -23,5 +23,21 @@ const writeFileDemo = () => {
 };
 
 
+const updateFileDemo = () => {
+  try {
+    const data = `
+        Add more data to file,
+        Add more data to file
+    `;
+    fs.appendFileSync("test.txt", data);
 
-writeFileDemo();
+    console.log("FILE_UPDATE :: SUCCESS ");
+  } catch (err) {
+    console.log();
+  }
+};
+
+
+
+
+updateFileDemo();
