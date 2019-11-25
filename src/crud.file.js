@@ -24,4 +24,4 @@ const writeFileDemo = () => {
 
 
 
-readFileDemo();
+writeFileDemo();
